@@ -3171,7 +3171,7 @@ select[multiple].input-group-xs > .input-group-btn > .btn {
 .navbar-btn {
   margin-left: 20px;
 }
-+ .navbar-btn {
+.navbar-btn {
   margin-left: 0;
 }
 .navbar-btn,
