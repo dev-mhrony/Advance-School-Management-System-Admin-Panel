@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Ghasful Admin Panel || MH RONY</title>
+
+      <!-- Global stylesheets -->
+      <link
+        href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900"
+        rel="stylesheet"
+        type="text/css"
+      />
+      <link
+        href="../assets/css/icons/icomoon/styles.css"
+        rel="stylesheet"
+        type="text/css"
+      />
+      <link
+        href="../assets/css/minified/bootstrap.min.css"
+        rel="stylesheet"
+        type="text/css"
+      />
+      <link
+        href="../assets/css/minified/core.min.css"
+        rel="stylesheet"
+        type="text/css"
+      />
+      <link
+        href="../assets/css/minified/components.min.css"
+        rel="stylesheet"
+        type="text/css"
+      />
+      <link
+        href="../assets/css/minified/colors.min.css"
+        rel="stylesheet"
+        type="text/css"
+      />
+      <!-- /global stylesheets -->
+
+      <!-- Fontwosame CDN -->
+
+      <link
+        rel="stylesheet"
+        href="myProjects/webProject/icofont/css/icofont.min.css"
+      />
+
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      />
+
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/regular.min.css"
+      />
+      <!-- Core JS files -->
+      <script
+        type="text/javascript"
+        src="../assets/js/plugins/loaders/pace.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="../assets/js/core/libraries/jquery.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="../assets/js/core/libraries/bootstrap.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="../assets/js/plugins/loaders/blockui.min.js"
+      ></script>
+      <!-- /core JS files -->
+
+      <!-- Theme JS files -->
+      <script
+        type="text/javascript"
+        src="../assets/js/plugins/visualization/d3/d3.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="../assets/js/plugins/visualization/d3/d3_tooltip.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="../assets/js/plugins/forms/styling/switchery.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="../assets/js/plugins/forms/styling/uniform.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="../assets/js/plugins/forms/selects/bootstrap_multiselect.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="../assets/js/plugins/ui/moment/moment.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="../assets/js/plugins/pickers/daterangepicker.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="../assets/js/plugins/ui/nicescroll.min.js"
+      ></script>
+      <script type="text/javascript" src="../assets/js/core/app.js"></script>
+      <script
+        type="text/javascript"
+        src="../assets/js/pages/dashboard.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="../assets/js/pages/dashboard.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="../assets/js/pages/layout_fixed_custom.js"
+      ></script>
+      <!-- /theme JS files -->
+    </head>
+
+    <body class="navbar-top">
+      <!-- Main navbar -->
+
+      <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="../index.html"
+            ><img
+              src="../assets/images/01.png"
+              alt=""
+              width="100px"
+              ;
+              style="margin-left: 40px; height: 24px; margin-top: -1px"
+          /></a>
+
+          <ul class="nav navbar-nav visible-xs-block">
+            <li>
+              <a data-toggle="collapse" data-target="#navbar-mobile"
+                ><i class="fa-solid fa-gear"></i
+              ></a>
+            </li>
+            <li>
+              <a class="sidebar-mobile-main-toggle"
+                ><i class="icon-paragraph-justify3"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="navbar-collapse collapse" id="navbar-mobile">
+          <ul class="nav navbar-nav">
+            <li>
+              <a class="sidebar-control sidebar-main-toggle hidden-xs"
+                ><i class="icon-paragraph-justify3"></i
+              ></a>
+            </li>
+          </ul>
+
+          <p class="navbar-text">
+            <span class="label bg-success-400">Online</span>
+          </p>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown language-switch">
+              <a class="dropdown-toggle" data-toggle="dropdown">
+                <img
+                  src="../assets/images/flags/gb.png"
+                  class="position-left"
+                  alt=""
+                />
+                English
+                <span class="caret"></span>
+              </a>
+
+              <ul class="dropdown-menu" style="min-width: 111px">
+                <li>
+                  <a class="deutsch"
+                    ><img src="../assets/images/flags/bd.png" alt="" />
+                    Bangla</a
+                  >
+                </li>
+                <li>
+                  <a class="deutsch"
+                    ><img src="../assets/images/flags/gb.png" alt="" />
+                    English</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fa-solid fa-bell"></i>
+                <span class="visible-xs-inline-block position-right"
+                  >Notification</span
+                >
+                <span class="badge bg-warning-400">2</span>
+              </a>
+
+              <div class="dropdown-menu dropdown-content width-350">
+                <div class="dropdown-content-heading">
+                  Notification
+                  <ul class="icons-list">
+                    <li>
+                      <a href="#"><i class="icon-compose"></i></a>
+                    </li>
+                  </ul>
+                </div>
+
+                <ul class="media-list dropdown-content-body">
+                  <li class="media">
+                    <div class="media-left">
+                      <img
+                        src="../assets/images/placeholder.jpg"
+                        class="img-circle img-sm"
+                        alt=""
+                      />
+                      <span class="badge bg-danger-400 media-badge">5</span>
+                    </div>
+
+                    <div class="media-body">
+                      <a href="#" class="media-heading">
+                        <span class="text-semibold">James Alexander</span>
+                        <span class="media-annotation pull-right">04:58</span>
+                      </a>
+
+                      <span class="text-muted"
+                        >who knows, maybe that would be the best thing for
+                        me...</span
+                      >
+                    </div>
+                  </li>
+
+                  <li class="media">
+                    <div class="media-left">
+                      <img
+                        src="../assets/images/placeholder.jpg"
+                        class="img-circle img-sm"
+                        alt=""
+                      />
+                      <span class="badge bg-danger-400 media-badge">4</span>
+                    </div>
+
+                    <div class="media-body">
+                      <a href="#" class="media-heading">
+                        <span class="text-semibold">Margo Baker</span>
+                        <span class="media-annotation pull-right">12:16</span>
+                      </a>
+
+                      <span class="text-muted"
+                        >That was something he was unable to do because...</span
+                      >
+                    </div>
+                  </li>
+
+                  <li class="media">
+                    <div class="media-left">
+                      <img
+                        src="../assets/images/placeholder.jpg"
+                        class="img-circle img-sm"
+                        alt=""
+                      />
+                    </div>
+                    <div class="media-body">
+                      <a href="#" class="media-heading">
+                        <span class="text-semibold">Jeremy Victorino</span>
+                        <span class="media-annotation pull-right">22:48</span>
+                      </a>
+
+                      <span class="text-muted"
+                        >But that would be extremely strained and
+                        suspicious...</span
+                      >
+                    </div>
+                  </li>
+
+                  <li class="media">
+                    <div class="media-left">
+                      <img
+                        src="../assets/images/placeholder.jpg"
+                        class="img-circle img-sm"
+                        alt=""
+                      />
+                    </div>
+                    <div class="media-body">
+                      <a href="#" class="media-heading">
+                        <span class="text-semibold">Beatrix Diaz</span>
+                        <span class="media-annotation pull-right">Tue</span>
+                      </a>
+
+                      <span class="text-muted"
+                        >What a strenuous career it is that I've chosen...</span
+                      >
+                    </div>
+                  </li>
+
+                  <li class="media">
+                    <div class="media-left">
+                      <img
+                        src="../assets/images/placeholder.jpg"
+                        class="img-circle img-sm"
+                        alt=""
+                      />
+                    </div>
+                    <div class="media-body">
+                      <a href="#" class="media-heading">
+                        <span class="text-semibold">Richard Vango</span>
+                        <span class="media-annotation pull-right">Mon</span>
+                      </a>
+
+                      <span class="text-muted"
+                        >Other travelling salesmen live a life of
+                        luxury...</span
+                      >
+                    </div>
+                  </li>
+                </ul>
+
+                <div class="dropdown-content-footer">
+                  <a href="#" data-popup="tooltip" title="All messages"
+                    ><i class="icon-menu display-block"></i
+                  ></a>
+                </div>
+              </div>
+            </li>
+
+            <li class="dropdown dropdown-user">
+              <a class="dropdown-toggle" data-toggle="dropdown">
+                <img src="../assets/images/user.jpg" alt="" />
+                <span>MH RONY</span>
+                <i class="caret"></i>
+              </a>
+
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li>
+                  <a href="#"><i class="icon-user-plus"></i> My profile</a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span class="badge bg-teal-400 pull-right">58</span>
+                    <i class="icon-comment-discussion"></i> Messages</a
+                  >
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#"><i class="icon-cog5"></i> Account settings</a>
+                </li>
+                <li>
+                  <a href="#"><i class="icon-switch2"></i> Logout</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- /main navbar -->
+
+      <!-- Page container -->
+      <div class="page-container">
+        <!-- Page content -->
+        <div class="page-content">
+          <!-- Main sidebar -->
+          <div class="sidebar sidebar-main sidebar-fixed">
+            <div class="sidebar-content">
+              <!-- Main navigation -->
+              <div class="sidebar-category sidebar-category-visible">
+                <div class="category-content no-padding">
+                  <ul class="navigation navigation-main navigation-accordion">
+                    <!-- Main -->
+                    <!-- Dashbord -->
+                    <li>
+                      <a href="../index.html"
+                        ><i class="icon-grid6"></i> <span>Dashboard</span></a
+                      >
+                    </li>
+                    <!-- Student -->
+                    <li class="active">
+                      <a href=""
+                        ><i class="icon-people"></i> <span>Student</span>
+                        <span class="label" style="background: rgb(228, 64, 78)"
+                          >100</span
+                        ></a
+                      >
+                      <ul>
+                        <!-- All Student -->
+                        <li>
+                          <a href="all_student.html">All Student</a>
+                        </li>
+                        <!-- Student Detials -->
+                        <li>
+                          <a href="student_detials.html">Student Detials</a>
+                        </li>
+                        <!-- Student Result -->
+                        <li>
+                          <a href="student_result_sheet.html">Student Result</a>
+                        </li>
+                        <!-- Student Payment -->
+                        <li>
+                          <a href="student_payment.html">Student Payment</a>
+                        </li>
+                        <!-- New Application -->
+                        <li class="active">
+                          <a href="new_application.html"
+                            >New Application
+                            <span
+                              class="label"
+                              style="background: rgb(228, 64, 78)"
+                              >100</span
+                            ></a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <!-- Teachers -->
+                    <li>
+                      <a href="#">
+                        <i class="fa-solid fa-chalkboard-user"></i
+                        ><span>Teachers</span></a
+                      >
+                      <ul>
+                        <li>
+                          <a href="index.html">All Teachers </a>
+                        </li>
+                        <li>
+                          <a href="">Teachers Details</a>
+                        </li>
+                        <li>
+                          <a href="">Teachers Payment Details</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- Parents -->
+                    <li>
+                      <a href="#"
+                        ><i class="icon-man-woman"></i> <span>Parents</span></a
+                      >
+                      <ul>
+                        <li>
+                          <a href="index.html">All Parents </a>
+                        </li>
+                        <li>
+                          <a href="">Parents Details</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- Staf -->
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-people-roof"></i
+                        ><span>Staf Details</span></a
+                      >
+                    </li>
+
+                    <!-- Academic -->
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-school"></i
+                        ><span>Academic</span></a
+                      >
+                      <ul>
+                        <li>
+                          <a href="">All Class </a>
+                        </li>
+                        <li>
+                          <a href="">Section</a>
+                        </li>
+                        <li>
+                          <a href="">Class Schedule</a>
+                        </li>
+                        <li>
+                          <a href="">Subject</a>
+                        </li>
+                        <li>
+                          <a href="">Syllabus</a>
+                        </li>
+                        <li>
+                          <a href="">Assignment</a>
+                        </li>
+                        <li>
+                          <a href="">Routine</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- Attendance -->
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-square-check"></i>
+                        <span>Attendance</span></a
+                      >
+                      <ul>
+                        <li>
+                          <a href="">Teacher </a>
+                        </li>
+                        <li>
+                          <a href="">Student</a>
+                        </li>
+                        <li>
+                          <a href="">Staf</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- Mark Sheet -->
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-calendar-days"></i>
+                        <span>Mark Sheet</span></a
+                      >
+                      <ul>
+                        <li>
+                          <a href="">Mark Table</a>
+                        </li>
+                        <li>
+                          <a href="">Mark Details</a>
+                        </li>
+                        <li>
+                          <a href="">Promotion</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- Message -->
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-message"></i>
+                        <span>Message</span></a
+                      >
+                    </li>
+
+                    <!-- Media -->
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-film"></i> <span>Media</span></a
+                      >
+                    </li>
+
+                    <!-- Exam Menu -->
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-pen-to-square"></i>
+                        <span>Exam</span></a
+                      >
+                      <ul>
+                        <li>
+                          <a href="">Question Group</a>
+                        </li>
+                        <li>
+                          <a href="">Online Exam</a>
+                        </li>
+                        <li>
+                          <a href="">Instuction</a>
+                        </li>
+                        <li>
+                          <a href="">Take Exam</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- Payment -->
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-money-check-dollar"></i>
+                        <span>Payment</span></a
+                      >
+                      <ul>
+                        <li>
+                          <a href="">Salary</a>
+                        </li>
+                        <li>
+                          <a href="">Manage Salary</a>
+                        </li>
+                        <li>
+                          <a href="">Manage Payment</a>
+                        </li>
+                        <li>
+                          <a href="">Overtime</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- Inventory -->
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-cart-flatbed"></i>
+                        <span>Inventory</span></a
+                      >
+                      <ul>
+                        <li>
+                          <a href="index.html">Category</a>
+                        </li>
+                        <li>
+                          <a href="">Product</a>
+                        </li>
+                        <li>
+                          <a href="">Warehouse</a>
+                        </li>
+                        <li>
+                          <a href="">Supplier</a>
+                        </li>
+                        <li>
+                          <a href="">Purchase</a>
+                        </li>
+                        <li>
+                          <a href="">Sale</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- Live Room -->
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-headset"></i>
+                        <span>Live Room</span></a
+                      >
+                      <ul>
+                        <li>
+                          <a href="index.html">Live Class</a>
+                        </li>
+                        <li>
+                          <a href="">Live Teachers</a>
+                        </li>
+                        <li>
+                          <a href="">Live Staf</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- Tutorial -->
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-person-chalkboard"></i>
+                        <span>Tutorial</span></a
+                      >
+                    </li>
+
+                    <!-- Library -->
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-swatchbook"></i>
+                        <span>Library</span></a
+                      >
+                      <ul>
+                        <li>
+                          <a href="">Member</a>
+                        </li>
+                        <li>
+                          <a href="">Books</a>
+                        </li>
+                        <li>
+                          <a href="">Issue</a>
+                        </li>
+                        <li>
+                          <a href="">E - Book</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- Transport -->
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-bus"></i>
+                        <span>Transport</span></a
+                      >
+                      <ul>
+                        <li>
+                          <a href="">Transport</a>
+                        </li>
+                        <li>
+                          <a href="">Member</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- Hostel -->
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-hotel"></i>
+                        <span>Hostel</span></a
+                      >
+                      <ul>
+                        <li>
+                          <a href="">Hostel</a>
+                        </li>
+                        <li>
+                          <a href="">Member</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- Sponsorship -->
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-handshake-simple"></i>
+                        <span>Sponsorship</span></a
+                      >
+                      <ul>
+                        <li>
+                          <a href="">Candidate</a>
+                        </li>
+                        <li>
+                          <a href="">Sponsor</a>
+                        </li>
+                        <li>
+                          <a href="">Sponsorship</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- Account -->
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-hospital-user"></i>
+                        <span>Account</span></a
+                      >
+                      <ul>
+                        <li>
+                          <a href="">Fee Types</a>
+                        </li>
+                        <li>
+                          <a href="">Invoice</a>
+                        </li>
+                        <li>
+                          <a href="">Payment History</a>
+                        </li>
+                        <li>
+                          <a href="">Expense</a>
+                        </li>
+                        <li>
+                          <a href="">Income</a>
+                        </li>
+                        <li>
+                          <a href="">Global Payment</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- Announcment -->
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-bullhorn"></i
+                        ><span>Announcment</span></a
+                      >
+                      <ul>
+                        <li>
+                          <a href="">Notice</a>
+                        </li>
+                        <li>
+                          <a href="">Event</a>
+                        </li>
+                        <li>
+                          <a href="">Holiday</a>
+                        </li>
+                        <li>
+                          <a href="">Expense</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- Report -->
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-file-lines"></i>
+                        <span>Report</span></a
+                      >
+                      <ul>
+                        <li>
+                          <a href="">Class Report</a>
+                        </li>
+                        <li>
+                          <a href="">Sponsorship Report</a>
+                        </li>
+                        <li>
+                          <a href="">Student Report</a>
+                        </li>
+                        <li>
+                          <a href="">ID Card Report</a>
+                        </li>
+                        <li>
+                          <a href="">Admit Card Report</a>
+                        </li>
+                        <li>
+                          <a href="">Rutine Report</a>
+                        </li>
+                        <li>
+                          <a href="">Exam Schedule Report</a>
+                        </li>
+                        <li>
+                          <a href="">Attendance Report</a>
+                        </li>
+                        <li>
+                          <a href="">Libary Books Report</a>
+                        </li>
+                        <li>
+                          <a href="">Library Book Issue Report</a>
+                        </li>
+                        <li>
+                          <a href="">Terminal Report</a>
+                        </li>
+                        <li>
+                          <a href="">Merit Stage Report</a>
+                        </li>
+                        <li>
+                          <a href="">Tabulation Sheet Report</a>
+                        </li>
+                        <li>
+                          <a href="">Progress Card Report</a>
+                        </li>
+                        <li>
+                          <a href="">Student Session Report</a>
+                        </li>
+                        <li>
+                          <a href="">Online Exam Question</a>
+                        </li>
+                        <li>
+                          <a href="">Online Exam Answer Report</a>
+                        </li>
+                        <li>
+                          <a href="">Online Admisson Report</a>
+                        </li>
+                        <li>
+                          <a href="">Certificate Report</a>
+                        </li>
+                        <li>
+                          <a href="">Leave Application Report</a>
+                        </li>
+                        <li>
+                          <a href="">Instrument Purchase Report</a>
+                        </li>
+                        <li>
+                          <a href="">Instrument Sale Report</a>
+                        </li>
+                        <li>
+                          <a href="">Student Fees Report</a>
+                        </li>
+                        <li>
+                          <a href="">Due Fees Report</a>
+                        </li>
+                        <li>
+                          <a href="">Transaction Report</a>
+                        </li>
+                        <li>
+                          <a href="">Student Fine Report</a>
+                        </li>
+                        <li>
+                          <a href="">Overtime Report</a>
+                        </li>
+                        <li>
+                          <a href="">Salary Report</a>
+                        </li>
+                        <li>
+                          <a href="">Account Ledger Report</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- Online Admition  -->
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-paper-plane"></i>
+                        <span>Online Admition</span></a
+                      >
+                    </li>
+
+                    <!-- Website Customize -->
+                    <li>
+                      <a href=""
+                        ><i class="fa-solid fa-window-maximize"></i>
+                        <span>Website Customize</span></a
+                      >
+                      <ul>
+                        <li>
+                          <a href="">Home</a>
+                        </li>
+                        <li>
+                          <a href="">About</a>
+                        </li>
+                        <li>
+                          <a href="">Course</a>
+                        </li>
+                        <li>
+                          <a href="">Event</a>
+                        </li>
+                        <li>
+                          <a href="">Core Features</a>
+                        </li>
+                        <li>
+                          <a href="">Instructor</a>
+                        </li>
+                        <li>
+                          <a href="">Testimonial</a>
+                        </li>
+                        <li>
+                          <a href="">Blog</a>
+                        </li>
+                        <li>
+                          <a href="">Footer</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- Setting  -->
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-gears"></i>
+                        <span>Setting</span></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- /main navigation -->
+            </div>
+          </div>
+          <!-- /main sidebar -->
+
+          <!-- Main content -->
+          <div class="content-wrapper">
+            <!-- Page header -->
+            <div class="page-header">
+              <div class="breadcrumb-line">
+                <ul class="breadcrumb">
+                  <li>
+                    <a href="index.html"
+                      ><i class="icon-home2 position-left"></i> Home</a
+                    >
+                  </li>
+                  <li class="active">New Application</li>
+                </ul>
+              </div>
+            </div>
+            <!-- /page header -->
+
+            <!-- Content area -->
+            <div class="content">
+              <!-- Dashboard content -->
+
+              <!-- /dashboard content -->
+
+              <!-- Footer -->
+              <div class="footer text-muted">
+                &copy; 2022. <a href="">Ghasful</a> by
+                <a href="http://developerrony.com" target="_blank">MH RONY</a>
+              </div>
+              <!-- /footer -->
+            </div>
+            <!-- /content area -->
+          </div>
+          <!-- /main content -->
+        </div>
+        <!-- /page content -->
+      </div>
+      <!-- /page container -->
+    </body>
+  </html>
+</html>
